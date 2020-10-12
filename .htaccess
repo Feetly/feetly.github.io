@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^(www.)?mbvl.in$ [NC]
+RewriteCond %{REQUEST_URI} ^/feetly.tech/(.*)$
+RewriteRule ^(.*)$ - [L,R=404]
